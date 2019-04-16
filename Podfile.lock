@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - Argo (4.2.0):
+    - Runes (>= 4.2.0)
+  - Curry (4.0.2)
+  - Runes (4.2.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage (~> 3.5)
+  - Argo
+  - Curry
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - Argo
+    - Curry
+    - Runes
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  Argo: d536a96befef47ea9b6405327dd604718fafc95c
+  Curry: e2388a19084bb0977d7318e39048d66550569bf0
+  Runes: bd3f507a2e20016fa24df180bf149651bcbf5ebb
+
+PODFILE CHECKSUM: 747dedfbf373409ea64c868c8563261dc64aee3b
+
+COCOAPODS: 1.7.0.beta.3
