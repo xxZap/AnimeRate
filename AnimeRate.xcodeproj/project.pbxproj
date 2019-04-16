@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0B3516701ACA04FA71A6A1C2 /* Pods_AnimeRate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2994DA1E6709DFB092A94665 /* Pods_AnimeRate.framework */; };
 		25FC706D226620D0005EC445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC706C226620D0005EC445 /* AppDelegate.swift */; };
-		25FC706F226620D0005EC445 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC706E226620D0005EC445 /* ViewController.swift */; };
-		25FC7072226620D0005EC445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FC7070226620D0005EC445 /* Main.storyboard */; };
 		25FC7075226620D0005EC445 /* AnimeRate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25FC7073226620D0005EC445 /* AnimeRate.xcdatamodeld */; };
 		25FC7077226620D1005EC445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25FC7076226620D1005EC445 /* Assets.xcassets */; };
 		25FC707A226620D1005EC445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FC7078226620D1005EC445 /* LaunchScreen.storyboard */; };
 		25FC7085226620D1005EC445 /* AnimeRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC7084226620D1005EC445 /* AnimeRateTests.swift */; };
+		25FC7095226623D9005EC445 /* Expandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC7094226623D9005EC445 /* Expandable.swift */; };
+		25FC7097226623EF005EC445 /* AnimeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC7096226623EF005EC445 /* AnimeElement.swift */; };
+		25FC709B22662449005EC445 /* FadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC709922662449005EC445 /* FadingView.swift */; };
+		25FC709C22662449005EC445 /* AttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC709A22662449005EC445 /* AttributeView.swift */; };
+		25FC709E22662457005EC445 /* ScoreAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC709D22662457005EC445 /* ScoreAttribute.swift */; };
+		25FC70A0226624C1005EC445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FC709F226624C1005EC445 /* Main.storyboard */; };
+		25FC70A5226624F2005EC445 /* AnimeElementCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25FC70A3226624F1005EC445 /* AnimeElementCollectionViewCell.xib */; };
+		25FC70A6226624F2005EC445 /* AnimeElementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC70A4226624F2005EC445 /* AnimeElementCollectionViewCell.swift */; };
+		25FC70A922662510005EC445 /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC70A72266250F005EC445 /* ExpandableCell.swift */; };
+		25FC70AA22662510005EC445 /* AnimatableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC70A82266250F005EC445 /* AnimatableCell.swift */; };
+		25FC70AC2266253E005EC445 /* AnimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC70AB2266253E005EC445 /* AnimeListViewController.swift */; };
 		65D5330714406AEBA0497C12 /* Pods_AnimeRateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9C9BA15A5E9149AE391282 /* Pods_AnimeRateTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,8 +41,6 @@
 		0EE12044FF918B072FAF02C4 /* Pods-AnimeRateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeRateTests.release.xcconfig"; path = "Target Support Files/Pods-AnimeRateTests/Pods-AnimeRateTests.release.xcconfig"; sourceTree = "<group>"; };
 		25FC7069226620D0005EC445 /* AnimeRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FC706C226620D0005EC445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25FC706E226620D0005EC445 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		25FC7071226620D0005EC445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25FC7074226620D0005EC445 /* AnimeRate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnimeRate.xcdatamodel; sourceTree = "<group>"; };
 		25FC7076226620D1005EC445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25FC7079226620D1005EC445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +48,17 @@
 		25FC7080226620D1005EC445 /* AnimeRateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeRateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FC7084226620D1005EC445 /* AnimeRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeRateTests.swift; sourceTree = "<group>"; };
 		25FC7086226620D1005EC445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25FC7094226623D9005EC445 /* Expandable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expandable.swift; sourceTree = "<group>"; };
+		25FC7096226623EF005EC445 /* AnimeElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimeElement.swift; sourceTree = "<group>"; };
+		25FC709922662449005EC445 /* FadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadingView.swift; sourceTree = "<group>"; };
+		25FC709A22662449005EC445 /* AttributeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeView.swift; sourceTree = "<group>"; };
+		25FC709D22662457005EC445 /* ScoreAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreAttribute.swift; sourceTree = "<group>"; };
+		25FC709F226624C1005EC445 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = AnimeRate/Application/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		25FC70A3226624F1005EC445 /* AnimeElementCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimeElementCollectionViewCell.xib; sourceTree = "<group>"; };
+		25FC70A4226624F2005EC445 /* AnimeElementCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimeElementCollectionViewCell.swift; sourceTree = "<group>"; };
+		25FC70A72266250F005EC445 /* ExpandableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
+		25FC70A82266250F005EC445 /* AnimatableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableCell.swift; sourceTree = "<group>"; };
+		25FC70AB2266253E005EC445 /* AnimeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimeListViewController.swift; sourceTree = "<group>"; };
 		2856C18FC2645B42D661EF42 /* Pods-AnimeRateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeRateTests.debug.xcconfig"; path = "Target Support Files/Pods-AnimeRateTests/Pods-AnimeRateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2994DA1E6709DFB092A94665 /* Pods_AnimeRate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeRate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B050882F41BEB00C3152ED /* Pods-AnimeRate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeRate.debug.xcconfig"; path = "Target Support Files/Pods-AnimeRate/Pods-AnimeRate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,9 +109,12 @@
 		25FC706B226620D0005EC445 /* AnimeRate */ = {
 			isa = PBXGroup;
 			children = (
+				25FC708F2266230F005EC445 /* Utils */,
+				25FC70902266232C005EC445 /* Models */,
+				25FC7093226623C3005EC445 /* Protocols */,
+				25FC709822662421005EC445 /* CustomViews */,
+				25FC709122662338005EC445 /* Application */,
 				25FC706C226620D0005EC445 /* AppDelegate.swift */,
-				25FC706E226620D0005EC445 /* ViewController.swift */,
-				25FC7070226620D0005EC445 /* Main.storyboard */,
 				25FC7076226620D1005EC445 /* Assets.xcassets */,
 				25FC7078226620D1005EC445 /* LaunchScreen.storyboard */,
 				25FC707B226620D1005EC445 /* Info.plist */,
@@ -109,6 +130,76 @@
 				25FC7086226620D1005EC445 /* Info.plist */,
 			);
 			path = AnimeRateTests;
+			sourceTree = "<group>";
+		};
+		25FC708F2266230F005EC445 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		25FC70902266232C005EC445 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25FC709D22662457005EC445 /* ScoreAttribute.swift */,
+				25FC7096226623EF005EC445 /* AnimeElement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25FC709122662338005EC445 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				25FC70922266234E005EC445 /* Main */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		25FC70922266234E005EC445 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25FC709F226624C1005EC445 /* Main.storyboard */,
+				25FC70A1226624D0005EC445 /* AnimeList */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		25FC7093226623C3005EC445 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				25FC7094226623D9005EC445 /* Expandable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		25FC709822662421005EC445 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				25FC70A82266250F005EC445 /* AnimatableCell.swift */,
+				25FC70A72266250F005EC445 /* ExpandableCell.swift */,
+				25FC709A22662449005EC445 /* AttributeView.swift */,
+				25FC709922662449005EC445 /* FadingView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		25FC70A1226624D0005EC445 /* AnimeList */ = {
+			isa = PBXGroup;
+			children = (
+				25FC70AB2266253E005EC445 /* AnimeListViewController.swift */,
+				25FC70A2226624DA005EC445 /* Cells */,
+			);
+			path = AnimeList;
+			sourceTree = "<group>";
+		};
+		25FC70A2226624DA005EC445 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				25FC70A4226624F2005EC445 /* AnimeElementCollectionViewCell.swift */,
+				25FC70A3226624F1005EC445 /* AnimeElementCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		5A7E8A5B3876DBD4A93A3BBA /* Frameworks */ = {
@@ -128,7 +219,6 @@
 				2856C18FC2645B42D661EF42 /* Pods-AnimeRateTests.debug.xcconfig */,
 				0EE12044FF918B072FAF02C4 /* Pods-AnimeRateTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -217,9 +307,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FC70A0226624C1005EC445 /* Main.storyboard in Resources */,
 				25FC707A226620D1005EC445 /* LaunchScreen.storyboard in Resources */,
+				25FC70A5226624F2005EC445 /* AnimeElementCollectionViewCell.xib in Resources */,
 				25FC7077226620D1005EC445 /* Assets.xcassets in Resources */,
-				25FC7072226620D0005EC445 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,9 +409,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25FC706F226620D0005EC445 /* ViewController.swift in Sources */,
+				25FC70A6226624F2005EC445 /* AnimeElementCollectionViewCell.swift in Sources */,
+				25FC709C22662449005EC445 /* AttributeView.swift in Sources */,
 				25FC706D226620D0005EC445 /* AppDelegate.swift in Sources */,
 				25FC7075226620D0005EC445 /* AnimeRate.xcdatamodeld in Sources */,
+				25FC7095226623D9005EC445 /* Expandable.swift in Sources */,
+				25FC70AC2266253E005EC445 /* AnimeListViewController.swift in Sources */,
+				25FC7097226623EF005EC445 /* AnimeElement.swift in Sources */,
+				25FC70AA22662510005EC445 /* AnimatableCell.swift in Sources */,
+				25FC709B22662449005EC445 /* FadingView.swift in Sources */,
+				25FC709E22662457005EC445 /* ScoreAttribute.swift in Sources */,
+				25FC70A922662510005EC445 /* ExpandableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,14 +442,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		25FC7070226620D0005EC445 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25FC7071226620D0005EC445 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		25FC7078226620D1005EC445 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
